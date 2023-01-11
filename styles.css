@@ -34,8 +34,13 @@ header {
 .right-header {
   display: flex;
   justify-content: space-between;
-  width: 170px;
+  width: 190px;
   border: black solid;
+}
+
+.header-links {
+  text-decoration: none;
+  color: white;
 }
 
 .content-container {
