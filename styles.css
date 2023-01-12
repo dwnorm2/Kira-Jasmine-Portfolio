@@ -95,9 +95,13 @@ textarea {
   margin-left: 5px;
 }
 
+/* label {
+} */
+
 .message-row {
   display: flex;
   align-items: flex-start;
+  postion: fixed;
 }
 
 /* contact */
@@ -113,6 +117,18 @@ textarea {
   font-size: small;
   text-align: right;
   display: ;
+}
+
+.contact-flex-container {
+  font-size: small;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h6 {
+  font-size: 16px;
 }
 
 /* buttons from codepen */
