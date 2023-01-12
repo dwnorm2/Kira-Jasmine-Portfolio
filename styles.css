@@ -33,9 +33,6 @@ header {
   justify-self: flex-start;
 }
 
-.left-header {
-}
-
 .right-header {
   display: flex;
   justify-content: space-between;
@@ -70,10 +67,6 @@ img {
 
 .hideme {
   opacity: 0;
-}
-
-.lastimg {
-  /* margin-bottom: 50px; */
 }
 
 .footer {
