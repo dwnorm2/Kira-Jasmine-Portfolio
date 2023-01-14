@@ -4,6 +4,10 @@
   margin: 0px;
 }
 
+.footer {
+  margin-top: 80px;
+}
+
 .grid-subcontainer {
   display: flex;
   flex-direction: row;
