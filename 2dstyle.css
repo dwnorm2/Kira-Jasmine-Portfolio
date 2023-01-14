@@ -12,12 +12,12 @@
   width: 80vw;
 
   align-self: center;
-  border: solid red;
+  /* border: solid red; */
 }
 .image-container {
   height: 300px;
   width: 300px;
-  border: solid red;
+  /* border: solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,21 +34,21 @@
   /* flex: 1 auto; */
 }
 
-.img1:nth-child(1) {
+.img1 {
   background-image: url(images/2d/7C1B7988-48DF-4E00-8258-5CFCCA8C14EB.jpg);
 }
-.img2:nth-child(1) {
+.img2 {
   background-image: url(images/2d/7F4B96B4-D97E-412B-A613-AD1C8200A606.jpg);
 }
-.img3:nth-child(1) {
+.img3 {
   background-image: url(images/2d/IMG_4329.JPG);
 }
-.img4:nth-child(1) {
+.img4 {
   background-image: url(images/2d/IMG_4515.JPG);
 }
-.img5:nth-child(1) {
+.img5 {
   background-image: url(images/2d/IMG_5217.JPG);
 }
-.img6:nth-child(1) {
+.img6 {
   background-image: url(images/2d/IMG_5245.JPG);
 }

@@ -1,10 +1,4 @@
-// alert("hi");
-
-// $(document).ready(function () {
-//   $("img").click(function () {
-//     this.requestFullscreen();
-//   });
-// });
+//contact form
 
 const form = document.getElementById("form");
 const result = document.getElementById("result");
