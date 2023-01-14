@@ -31,6 +31,7 @@ header {
   background-color: black;
   padding: 15px;
   justify-self: flex-start;
+  /* border: solid red; */
 }
 
 .right-header {
