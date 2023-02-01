@@ -59,7 +59,7 @@ camera.position.set(1, 1, 2);
 
 function animate() {
   requestAnimationFrame(animate);
-  obj.rotation.y += 0.01;
+  // obj.rotation.y += 0.01;
   controls.update();
   renderer.render(scene, camera);
 }

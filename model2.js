@@ -56,7 +56,8 @@ camera.position.set(0, 0, 5);
 
 function animate() {
   requestAnimationFrame(animate);
-  obj.rotation.y += 0.01;
+  //rotation causes type error?
+  // obj.rotation.y += 0.01;
   controls.update();
   renderer.render(scene, camera);
 }
