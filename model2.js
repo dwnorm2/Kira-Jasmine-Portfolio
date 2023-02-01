@@ -21,7 +21,7 @@ var loader = new GLTFLoader();
 
 var obj;
 
-loader.load("", function (gltf) {
+loader.load("./adamHead/adamHead.gltf", function (gltf) {
   obj = gltf.scene;
 
   scene.add(gltf.scene);
