@@ -56,3 +56,14 @@
 .img6 {
   background-image: url(images/2d/IMG_5245.JPG);
 }
+
+canvas {
+  display: block;
+}
+
+.model-box {
+  /* border: solid red; */
+  height: 300px;
+  width: 300px;
+  flex: none;
+}
