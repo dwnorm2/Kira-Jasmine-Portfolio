@@ -20,14 +20,25 @@ camera.aspect = w / h;
 var loader = new GLTFLoader();
 
 var obj;
+// const metalTexture = new THREE.TextureLoader().load(
+//   "./3d-model/Metal_006_SD/Metal_006_ambientOcclusion.jpg"
+// );
+// const material = new THREE.MeshBasicMaterial({ map: metalTexture });
 
-loader.load("./adamHead/adamHead.gltf", function (gltf) {
+loader.load("./3d-model/boo1.glb", function (gltf) {
   obj = gltf.scene;
-
+  // obj.material.map = material;
   scene.add(gltf.scene);
 });
 
-scene.background = new THREE.Color(0x808080);
+scene.background = new THREE.Color(0x000000);
+
+// const textLoader = new THREE.TextureLoader();
+// const metalTexture = new THREE.TextureLoader().load(
+//   "./3d-model/Metal_006_SD/Metal_006_ambientOcclusion.jpg"
+// );
+
+// obj.map = metalTexture;
 
 //resize window function
 // window.addEventListener("resize", onWindowResize, false);
@@ -39,25 +50,26 @@ scene.background = new THREE.Color(0x808080);
 // }
 
 // various lights
-// var light = new THREE.HemisphereLight(0xffffff, 0x000000, 2);
-var light = new THREE.AmbientLight(0xffffff);
-scene.add(light);
+// // var light = new THREE.HemisphereLight(0xffffff, 0x000000, 2);
+// var light = new THREE.AmbientLight(0xffffff);
+// scene.add(light);
 // scene.add(light);
 // var hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444);
 // hemiLight.position.set(0, 300, 0);
 // scene.add(hemiLight);
 
-// var dirLight = new THREE.DirectionalLight(0xffffff);
-// dirLight.position.set(75, 5000, -75);
-// scene.add(dirLight);
+var dirLight = new THREE.DirectionalLight(0xffffff);
+dirLight.position.set(75, 5000, -75);
+scene.add(dirLight);
+// material.wireframe = true;
 
 const controls = new OrbitControls(camera, renderer.domElement);
-camera.position.set(0, 0, 5);
+camera.position.set(0, 0, 3);
 
 function animate() {
   requestAnimationFrame(animate);
   //rotation causes type error?
-  // obj.rotation.y += 0.01;
+  obj.rotation.y += 0.01;
   controls.update();
   renderer.render(scene, camera);
 }
