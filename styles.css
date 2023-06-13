@@ -118,7 +118,7 @@ textarea {
 .message-row {
   display: flex;
   align-items: flex-start;
-  postion: fixed;
+  /* postion: fixed; */
 }
 
 /* contact */
@@ -133,7 +133,7 @@ textarea {
 .field-container {
   font-size: small;
   text-align: right;
-  display: ;
+  /* display: ; */
 }
 
 .contact-flex-container {
